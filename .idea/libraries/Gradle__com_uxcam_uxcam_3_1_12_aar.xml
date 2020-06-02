@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.uxcam:uxcam:3.1.12@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d9a9302283df402f8cb49e49688f906c/uxcam-3.1.12/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d9a9302283df402f8cb49e49688f906c/uxcam-3.1.12/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.uxcam/uxcam/3.1.12/2ddea1bfd72a6bf32111ff75a1dfd315ae0ec926/uxcam-3.1.12-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>

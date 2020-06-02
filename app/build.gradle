@@ -1,0 +1,152 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
+    defaultConfig {
+        applicationId "com.example.testlibs"
+        minSdkVersion 19
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs/aars', include: ['*.aar', '*.jar'], exclude: [])
+    implementation 'androidx.appcompat:appcompat:1.1.0-rc01'//resuelve crash en android 5 en el splash
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'com.browser2app:khenshin:3.9.3'
+    implementation 'org.sufficientlysecure:html-textview:3.6'
+    implementation 'com.theartofdev.edmodo:android-image-cropper:1.1.+'
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+    implementation 'com.urbanairship.android:urbanairship-fcm:13.0.0'
+    implementation 'com.karumi:dexter:4.2.0'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation 'com.jakewharton:butterknife:10.2.0'
+    implementation 'com.github.douglasjunior:android-simple-tooltip:0.2.2'
+    implementation 'uk.co.samuelwall:material-tap-target-prompt:2.14.0'
+    implementation 'com.github.aakira:expandable-layout:1.6.0@aar'
+    implementation 'com.orhanobut:logger:2.1.1'
+    implementation 'uk.co.samuelwall:material-tap-target-prompt:2.14.0'
+    implementation 'com.github.aakira:expandable-layout:1.6.0@aar'
+    implementation 'org.apache.commons:commons-lang3:3.4'
+    implementation 'io.jsonwebtoken:jjwt:0.7.0'
+    implementation 'me.relex:circleindicator:1.2.2@aar'
+    implementation 'com.eftimoff:android-viewpager-transformers:1.0.1@aar'
+    implementation 'com.adobe.marketing.mobile:analytics:1.+'
+    implementation 'com.adobe.marketing.mobile:userprofile:1.+'
+    implementation 'com.adobe.marketing.mobile:sdk-core:1.+'
+    implementation 'me.leolin:ShortcutBadger:1.1.22@aar'
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation 'com.google.firebase:firebase-messaging:20.1.6'
+    implementation 'com.google.firebase:firebase-core:17.4.0'
+    implementation 'com.facebook.stetho:stetho:1.5.0'
+    implementation 'com.facebook.stetho:stetho-okhttp3:1.5.0'
+    implementation 'com.facebook.stetho:stetho-urlconnection:1.5.0'
+    implementation 'net.danlew:android.joda:2.10.1.1'
+    implementation 'com.github.iwgang:countdownview:2.1.6'
+    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+    implementation 'com.squareup.retrofit2:converter-scalars:2.3.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.10.0'
+    implementation 'com.orhanobut:logger:2.1.1'
+    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.2'
+    implementation 'io.reactivex.rxjava2:rxjava:2.1.13'
+    implementation 'com.ibm.mobile.foundation:ibmmobilefirstplatformfoundation:8.0.2020032409'
+    implementation 'com.ibm.mobile.foundation:ibmmobilefirstplatformfoundationpush:8.0.2020022806'
+    implementation 'com.ibm.mobile.foundation:ibmmobilefirstplatformfoundationjsonstore:8.0.2019103109'
+    implementation 'com.google.android.gms:play-services-maps:17.0.0'
+    implementation 'com.google.android.gms:play-services-location:17.0.0'
+    implementation 'com.google.android.gms:play-services-places:17.0.0'
+    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-27'
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0-alpha'
+    implementation 'net.cachapa.expandablelayout:expandablelayout:2.9.2'
+    implementation('com.github.ihsanbal:LoggingInterceptor:3.0.0') {
+        exclude group: 'org.json', module: 'json'
+    }
+    //RXJAVA
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.4.0'
+    implementation 'android.arch.persistence.room:rxjava2:1.1.1'
+    //UXCAM
+    implementation 'com.uxcam:uxcam:3.1.12@aar'
+    //QUALTRICS
+    implementation 'com.qualtrics:digital:1.4'
+    implementation 'android.arch.work:work-runtime:1.0.1'
+    //HUAWEI MOBILE SERVICES
+    implementation 'com.huawei.hms:base:4.0.2.300'
+    implementation 'com.huawei.hms:location:4.0.2.300'
+    implementation 'com.huawei.hms:site:4.0.2.300'
+    implementation 'com.huawei.hms:maps:4.0.0.301'
+    //Phone Protect
+    //implementation files('libs/aars/phoneprotect.aar')
+    androidTestImplementation 'android.arch.core:core-testing:1.1.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.0'
+
+    tasks.register("depsize") {
+        description = 'Prints dependencies for "default" configuration'
+        doLast() {
+            listConfigurationDependencies(configurations.default)
+        }
+    }
+    tasks.register("depsize-all-configurations") {
+        description = 'Prints dependencies for all available configurations'
+        doLast() {
+            configurations.each {
+                if (it.isCanBeResolved()) {
+                    listConfigurationDependencies(it)
+                }
+            }
+        }
+    }
+
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven { url 'https://jitpack.io' }
+        //TODO HUAWEI
+        maven { url 'http://developer.huawei.com/repo/'}
+        maven { url 'https://oss.sonatype.org/content/repositories/snapshots' }
+        maven { url "https://s3-us-west-2.amazonaws.com/si-mobile-sdks/android/" }
+        maven { url 'https://sdk.uxcam.com/android/' }
+        maven {
+            url 'https://dev.khipu.com/nexus/content/repositories/browser2app'
+            credentials {
+                username 'claro'
+                password 'dujA9hJmIWa6JGkXgIG4'
+            }
+        }
+    }
+}
+
+def listConfigurationDependencies(Configuration configuration) {
+    def formatStr = "%,10.2f"
+    def size = configuration.collect { it.length() / (1024 * 1024) }.sum()
+    def out = new StringBuffer()
+    out << "\nConfiguration name: \"${configuration.name}\"\n"
+    if (size) {
+        out << 'Total dependencies size:'.padRight(65)
+        out << "${String.format(formatStr, size)} Mb\n\n"
+        configuration.sort { -it.length() }
+                .each {
+                    out << "${it.name}".padRight(65)
+                    out << "${String.format(formatStr, (it.length() / 1024))} kb\n"
+                }
+    } else {
+        out << 'No dependencies found';
+    }
+    println(out)
+}

@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.ibm.mobile.foundation:ibmmobilefirstplatformfoundationpush:8.0.2020022806@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/cbca28b97307007bf85b468411b861b5/jetified-ibmmobilefirstplatformfoundationpush-8.0.2020022806/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/cbca28b97307007bf85b468411b861b5/jetified-ibmmobilefirstplatformfoundationpush-8.0.2020022806/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.ibm.mobile.foundation/ibmmobilefirstplatformfoundationpush/8.0.2020022806/c323ae1225c1a29e2022162ac76c576819fad05e/ibmmobilefirstplatformfoundationpush-8.0.2020022806-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.ibm.mobile.foundation/ibmmobilefirstplatformfoundationpush/8.0.2020022806/8f0a5daaff163ece59051f5e21140e548eb0804b/ibmmobilefirstplatformfoundationpush-8.0.2020022806-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

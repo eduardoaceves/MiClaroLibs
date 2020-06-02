@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="Gradle: com.squareup.duktape:duktape-android:1.2.0@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/81b13040b1028e1751f40fda7eda843e/jetified-duktape-android-1.2.0/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/81b13040b1028e1751f40fda7eda843e/jetified-duktape-android-1.2.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/81b13040b1028e1751f40fda7eda843e/jetified-duktape-android-1.2.0/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.duktape/duktape-android/1.2.0/a348af7e0511e6a2c3e9b15ef35b1c62b33e5a7e/duktape-android-1.2.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.duktape/duktape-android/1.2.0/19f10b641e1c6ee5fd12ed408bb34abd38e63153/duktape-android-1.2.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

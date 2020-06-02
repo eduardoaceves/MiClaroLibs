@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.bottlerocketstudios:vault:1.4.0@jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.bottlerocketstudios/vault/1.4.0/9e5bfa3386e5940d17ec54dba5d554ec3cbe214/vault-1.4.0.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.bottlerocketstudios/vault/1.4.0/51cb96dcf5a1ab187b83665de3c6a7ec5031e789/vault-1.4.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.bottlerocketstudios/vault/1.4.0/9f8ad0dd282c1864d96690dc0fc5cebba18c64c9/vault-1.4.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

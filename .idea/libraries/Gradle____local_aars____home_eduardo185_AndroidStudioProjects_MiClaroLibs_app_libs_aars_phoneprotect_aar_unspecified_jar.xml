@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: __local_aars__:/home/eduardo185/AndroidStudioProjects/MiClaroLibs/app/libs/aars/phoneprotect.aar:unspecified@jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/dfc657ed11411c74a9010b8e4078e298/jetified-phoneprotect/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/dfc657ed11411c74a9010b8e4078e298/jetified-phoneprotect/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
